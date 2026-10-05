@@ -1,0 +1,338 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*  шапка */
+
+header {
+    width: 100%;
+    height: 65px;
+    background-color: #2b2b2b;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 5px 10px #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 65px;
+}
+
+
+header .logo {
+    width: 11%;
+    height: 35%;
+    background: url("picture/logo.svg") 0 0 no-repeat;
+}
+header nav ul li {
+    position: relative;
+    float: left;
+}
+
+header nav ul li a {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0px 13px;
+    font-family: sans-serif;
+}
+
+
+.links {
+    position: relative;
+    gap: 9px; /* Расстояние между ссылками */
+    top: 0px;
+    left: 27%;
+    display: flex;
+}
+
+
+header .button {
+    cursor: pointer;
+    position: relative;
+    left: 44%;
+    top: 0;
+    background-color: #000000;
+    clip-path: polygon(calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 20px 100%, 0 50%, 20px 0%);
+    color: silver;
+    padding: 10px 40px;
+}
+
+.button:hover {
+    background-color: #666;
+}
+.button-1:hover {
+    background-color: #666;
+}
+
+header .button-1 {
+    cursor: pointer;
+    position: relative;
+    left: 44%;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    clip-path: polygon(calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 20px 100%, 0 50%, 20px 0%);
+    color: #000000;
+    background-color: rgb(186, 146, 94);
+    padding: 10px 40px;
+}
+
+/*  конец шапка header */
+
+                                                  /* main */
+
+.contain {
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+}
+
+main {
+    padding-top: 65px;
+    overflow: hidden;
+}
+
+.oblivion {
+    min-height: 71vh;
+    background: url("picture/1-fon.jpg") 0 0 no-repeat;
+}
+
+.image-container {
+    max-width: 25%;
+    position: relative;
+    top: 77px;
+    left: 38%;
+}
+/*
+вторая вкладка Империя
+ */
+
+.empire {
+    height: 71vh;
+    background: url("picture/empire.jpeg") 0 0 no-repeat;
+}
+
+.empire .contain {
+    height: inherit;
+}
+
+.empire .block {
+    width: 50%;
+    height: inherit;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+
+.empire .title {
+    font-size: 43px;
+    color: #b5b5b5;
+    font-family: auto;
+    text-transform: uppercase; /* Преобразуем текст в большие буквы */
+}
+
+.empire .text {
+    font-size: 19px;
+    font-family: auto;
+    color: #b5b5b5;
+    line-height: 25px;
+    margin: 55px 0px;
+}
+
+.empire .text p {
+    width: 57%;
+}
+
+video {
+    display: inline-block;
+    width: 45%;
+    margin: -22px 0px;
+}
+/*
+.empire:before {
+    content: " ";
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .1));
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+ */
+
+.clearfix:after {
+    content: '';
+    clear: both;
+}
+
+/*
+вторая вкладка Эсклюзиввные обновления
+ */
+
+.blades {
+    height: 37vh;
+    background: url("picture/fon-blades.jpg") 0 0 no-repeat;
+    background-size: cover;
+}
+
+.blades .contain {
+    height: inherit;
+}
+
+.blades .block {
+    width: 50%;
+    height: inherit;
+    padding: 50px 0;
+    box-sizing: border-box;
+    float: left;
+}
+
+.blades .contain .title {
+    width: 100%;
+    font-size: 44px;
+    color: #b5b5b5;
+    font-family: auto;
+    text-transform: uppercase;
+    margin-top: 45px;
+}
+
+.blades .contain .button {
+    width: 48%;
+    text-align: center;
+    cursor: pointer;
+    background-color: #948b74;
+    clip-path: polygon(calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 20px 100%, 0 50%, 20px 0%);
+    padding: 14px 0px;
+    margin-top: 45px;
+}
+.blades .contain .button a {
+    color: #000000;
+    font-size: 18px;
+    font-family: serif;
+    text-transform: uppercase;
+}
+
+.blades .picture-blades {
+    width: 50%;
+    height: inherit;
+    padding: 71px 0;
+    box-sizing: border-box;
+    float: right;
+    margin-right: -237px;
+}
+
+.blades .picture-blades img {
+    width: 33%;
+}
+
+/*
+Фотографии медиа
+ */
+
+.media {
+    background: url("picture/fon-media.jpg") 0 0 no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.media .images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.media .images .image img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.media .images .image {
+    height: 20vw;
+}
+
+.media .images .image .item {
+    height: 50%;
+}
+
+.media .images .big {
+    width: 50%;
+}
+
+.media .images .small {
+    width: 25%;
+}
+
+/*
+Platforms
+ */
+
+.platforms {
+    height: 8vh;
+    background-color:rgb(61, 61, 61);
+    background-size: cover;
+    text-align: center;
+    padding: 10px;
+}
+
+    /*
+        ЯЗЫК
+     */
+.language {
+    height: 8vh;
+    background-color: #242424;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.language .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #B3B3B3;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Плавный переход для фона и тени */
+}
+
+.language .button:hover {
+    background-color: #555; /* Более светлый фон при наведении */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Добавление небольшой тени */
+}
+
+.language .button .icon {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.language span {
+    color: #B3B3B3;
+}
+
+
+/*
+                                        FOOTER
+ */
